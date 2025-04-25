@@ -1,0 +1,50 @@
+# Dart & Flutter
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# IntelliJ related
+.idea/
+*.iml
+
+# VS Code related
+.vscode/
+
+# Mac & Linux
+.DS_Store
+
+# Android
+android/.gradle/
+android/local.properties
+android/app/debug
+android/app/profile
+android/app/release
+
+# iOS
+ios/Pods/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace
+ios/build/
+
+# Web
+web/.dart_tool/
+
+# Windows
+windows/build/
+windows/.dart_tool/
+
+# Linux
+linux/build/
+linux/.dart_tool/
+
+# macOS
+macos/build/
+macos/.dart_tool/
+
+# Generated files
+*.lock

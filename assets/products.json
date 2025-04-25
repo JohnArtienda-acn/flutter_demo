@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Wireless Earbuds",
+      "description": "Enjoy crystal-clear sound and powerful bass with our wireless earbuds. Featuring advanced noise cancellation technology and up to 20 hours of battery life, these earbuds are perfect for music lovers and commuters alike.",
+      "imageUrl": "https://via.placeholder.com/150/F44336/FFFFFF?Text=Product3",
+      "price": 59.99,
+      "isLiked": false
+    },
+    {
+      "name": "Smartwatch Pro",
+      "description": "Stay connected and active with the Smartwatch Pro. Monitor your heart rate, sleep, and daily activity while receiving calls, messages, and app alerts right on your wrist. Designed for performance and elegance.",
+      "imageUrl": "https://via.placeholder.com/150/9C27B0/FFFFFF?Text=Product5",
+      "price": 129.99,
+      "isLiked": true
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "description": "Fill the room with rich, vibrant sound using this compact yet powerful Bluetooth speaker. With 12-hour playtime, water-resistant build, and deep bass, it's the perfect companion for parties or personal use.",
+      "imageUrl": "https://via.placeholder.com/150/4CAF50/FFFFFF?Text=Product2",
+      "price": 45.5,
+      "isLiked": false
+    },
+    {
+      "name": "Gaming Mouse",
+      "description": "Dominate the game with our ergonomic gaming mouse featuring customizable RGB lighting, high-precision tracking, and adjustable DPI settings. Designed for accuracy and comfort during extended sessions.",
+      "imageUrl": "https://via.placeholder.com/150/2196F3/FFFFFF?Text=Product4",
+      "price": 39.99,
+      "isLiked": true
+    },
+    {
+      "name": "4K Monitor",
+      "description": "Experience ultra-sharp visuals and vibrant colors on this 4K monitor, ideal for gaming, creative work, or entertainment. Featuring HDR support, wide color gamut, and a high refresh rate for smooth performance.",
+      "imageUrl": "https://via.placeholder.com/150/FFC107/000000?Text=Product1",
+      "price": 349.0,
+      "isLiked": false
+    },
+    {
+      "name": "Noise Cancelling Headphones",
+      "description": "Immerse yourself in sound with our premium noise cancelling headphones. Engineered for comfort and clarity, they block out distractions and deliver studio-quality audio for work or relaxation.",
+      "imageUrl": "https://via.placeholder.com/150/2196F3/FFFFFF?Text=Product4",
+      "price": 199.99,
+      "isLiked": true
+    },
+    {
+      "name": "Mechanical Keyboard",
+      "description": "Boost your typing and gaming experience with this mechanical keyboard. It features tactile switches, customizable RGB lighting, and a durable aluminum body that blends performance and aesthetics.",
+      "imageUrl": "https://via.placeholder.com/150/9C27B0/FFFFFF?Text=Product5",
+      "price": 89.99,
+      "isLiked": false
+    },
+    {
+      "name": "Fitness Tracker Band",
+      "description": "Track your fitness journey with this waterproof band. Monitor steps, heart rate, sleep patterns, and more. Lightweight and stylish, it's your all-day wellness companion with real-time updates.",
+      "imageUrl": "https://via.placeholder.com/150/4CAF50/FFFFFF?Text=Product2",
+      "price": 29.99,
+      "isLiked": true
+    },
+    {
+      "name": "Portable SSD 1TB",
+      "description": "Store and transfer files at blazing speeds with this ultra-compact 1TB SSD. It’s housed in a durable aluminum shell that’s both lightweight and shock-resistant, perfect for creatives and professionals.",
+      "imageUrl": "https://via.placeholder.com/150/FFC107/000000?Text=Product1",
+      "price": 119.99,
+      "isLiked": false
+    },
+    {
+      "name": "Wireless Charger Pad",
+      "description": "Simplify charging with this sleek wireless pad. Just place your device on the surface for fast, clutter-free power. Designed for safety and speed, compatible with all Qi-enabled devices.",
+      "imageUrl": "https://via.placeholder.com/150/F44336/FFFFFF?Text=Product3",
+      "price": 24.99,
+      "isLiked": true
+    }
+  ]
+  

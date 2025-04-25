@@ -1,16 +1,26 @@
 # demo
 
-A new Flutter project.
+This is used for the demo app on flutter project:
 
-## Getting Started
+The Project compose of:
+- Home Screen
+- Profile Screen
+- Cart Screen
+- Product Detail Screen
+- Payment Sreen
 
-This project is a starting point for a Flutter application.
+Tools used are:
+- State Management : Bloc and Equatable for kotlin like approach
+- Routing : Go_Router
+- Qr_Flutter
+- Dotted_Border
 
-A few resources to get you started if this is your first Flutter project:
+# Note
+For modifying the Profile Tab
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Please go to the lib > utils > constants
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+and modify the 3:
+tiers
+totalPoints
+selectedTier

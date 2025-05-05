@@ -1,6 +1,6 @@
 import 'package:demo/utils/constants.dart';
 import 'package:demo/utils/textstyle.dart';
-import 'package:demo/widgets/category_tile.dart';
+import 'package:demo/home/widget/category_tile.dart';
 import 'package:flutter/material.dart';
 
 class CategoryList extends StatelessWidget {

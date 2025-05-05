@@ -1,8 +1,8 @@
 import 'package:demo/utils/constants.dart';
 import 'package:demo/utils/extensions.dart';
 import 'package:demo/utils/textstyle.dart';
-import 'package:demo/widgets/loyalty_card.dart';
-import 'package:demo/widgets/loyalty_tier.dart';
+import 'package:demo/home/widget/loyalty_card.dart';
+import 'package:demo/home/widget/loyalty_tier.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';

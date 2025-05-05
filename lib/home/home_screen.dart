@@ -1,11 +1,11 @@
 import 'package:demo/bloc/homescreenbloc.dart';
 import 'package:demo/bloc/homescreenevent.dart';
 import 'package:demo/bloc/homescreenstate.dart';
-import 'package:demo/screen/cart_screen.dart';
-import 'package:demo/screen/profile_screen.dart';
+import 'package:demo/home/cart_screen.dart';
+import 'package:demo/home/profile_screen.dart';
 import 'package:demo/utils/constants.dart';
 import 'package:demo/utils/extensions.dart';
-import 'package:demo/widgets/category_list.dart';
+import 'package:demo/home/widget/category_list.dart';
 import 'package:demo/widgets/image_carousel.dart';
 import 'package:demo/widgets/product_list.dart';
 import 'package:flutter/material.dart';

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10268234077",
+    "project_id": "e-commerce-de2db",
+    "storage_bucket": "e-commerce-de2db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10268234077:android:6217bddedf5568be9118b4",
+        "android_client_info": {
+          "package_name": "com.example.demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPZYx1njDzcNkpi7g8wQBplPCyQaEHDCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

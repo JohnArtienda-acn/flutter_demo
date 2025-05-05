@@ -238,8 +238,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
                   title: "Confirm",
                   onTap: () {
                     final bloc = context.read<HomeScreenBloc>();
-                    bloc..add(UpdateHomeScreenTab(0));
-                    bloc..add(Payment());
+                    bloc.add(UpdateHomeScreenTab(0));
+                    bloc.add(Payment());
                     context.go('/');
                   },
                 ),

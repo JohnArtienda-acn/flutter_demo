@@ -1,7 +1,7 @@
 import 'package:demo/model/navigation_data.dart';
 import 'package:demo/model/product.dart';
 import 'package:demo/screen/full_product_screen.dart';
-import 'package:demo/screen/home_screen.dart';
+import 'package:demo/home/home_screen.dart';
 import 'package:demo/screen/payment_screen.dart';
 import 'package:demo/screen/product_detail_screen.dart';
 import 'package:flutter/material.dart';

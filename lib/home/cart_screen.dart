@@ -3,7 +3,7 @@ import 'package:demo/bloc/homescreenstate.dart';
 import 'package:demo/utils/constants.dart';
 import 'package:demo/utils/extensions.dart';
 import 'package:demo/utils/textstyle.dart';
-import 'package:demo/widgets/cart_card.dart';
+import 'package:demo/home/widget/cart_card.dart';
 import 'package:demo/widgets/demo_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

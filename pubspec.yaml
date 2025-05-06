@@ -19,6 +19,9 @@ dependencies:
   uuid: ^4.0.0
   font_awesome_flutter: ^10.5.0
   flutter_svg: ^2.0.7
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.18.0
+  cloud_firestore: ^4.16.0
 
 dev_dependencies:
   flutter_test:

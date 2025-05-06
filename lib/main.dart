@@ -1,10 +1,18 @@
 import 'package:demo/bloc/homescreenbloc.dart';
 import 'package:demo/router/router.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'firebase_options.dart';
 import 'theme.dart';
 
-void main() => runApp(const Demo());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const Demo());
+}
 
 class Demo extends StatelessWidget {
   const Demo({super.key});

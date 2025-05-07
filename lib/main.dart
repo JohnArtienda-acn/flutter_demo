@@ -1,4 +1,5 @@
 import 'package:demo/bloc/homescreenbloc.dart';
+import 'package:demo/dependency/depencency.dart';
 import 'package:demo/router/router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'firebase_options.dart';
 import 'theme.dart';
 
 Future<void> main() async {
+  setupDependency();
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -21,7 +23,7 @@ class Demo extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<HomeScreenBloc>(create: (context) => HomeScreenBloc()),
+        BlocProvider<HomeScreenBloc>(create: (context) => dependency<HomeScreenBloc>()),
       ],
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,

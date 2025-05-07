@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:demo/bloc/homescreenevent.dart';
 import 'package:demo/bloc/homescreenstate.dart';
+import 'package:demo/firebase_service/firestore_helper.dart';
 import 'package:demo/model/cart.dart';
 import 'package:demo/model/product.dart';
 import 'package:flutter/foundation.dart';
@@ -9,7 +10,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
-  HomeScreenBloc()
+  final FireStoreHelper fireStoreHelper;
+
+
+  HomeScreenBloc(
+      this.fireStoreHelper
+      )
       : super(const HomeScreenState(
           products: [],
           addedProducts: [],
@@ -31,8 +37,10 @@ class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
     emit(state.copyWith(isLoading: true));
 
     try {
-      await Future.delayed(Duration(seconds: 2));
-      List<Product> products = await _loadProducts();
+      // await Future.delayed(Duration(seconds: 2));
+      // List<Product> products = await _loadProducts();
+
+      List<Product> products = await fireStoreHelper.getProducts();
 
       emit(
         state.copyWith(

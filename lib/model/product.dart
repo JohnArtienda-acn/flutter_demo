@@ -1,8 +1,10 @@
+import 'dart:ffi';
 import 'dart:math';
 
 import 'package:demo/utils/constants.dart';
 
 class Product {
+  final String? id;
   final String name;
   final String description;
   final String imageUrl;
@@ -10,6 +12,7 @@ class Product {
   final bool isLiked;
 
   Product({
+    this.id,
     required this.name,
     required this.description,
     required this.imageUrl,
@@ -17,13 +20,15 @@ class Product {
     required this.isLiked,
   });
 
-  // Factory constructor to create a Product from a JSON object
-  factory Product.fromJson(Map<String, dynamic> json) {
+  factory Product.fromJson(Map<String, dynamic> json, {String? id = ""}) {
+    final String price = json['price'];
+
     return Product(
+      id: id,
       name: json['name'] as String,
       description: json['description'] as String,
       imageUrl: imageOptions[Random().nextInt(imageOptions.length)],
-      price: (json['price'] as num).toDouble(),
+      price: double.parse(price),
       isLiked: json['isLiked'] as bool,
     );
   }

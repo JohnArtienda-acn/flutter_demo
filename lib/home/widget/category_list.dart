@@ -13,12 +13,6 @@ class CategoryList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final int maxVisible = 4;
-    final bool hasMore = category.length > maxVisible;
-
-    final List<String> visibleCategories =
-        hasMore ? category.sublist(0, maxVisible) : category;
-
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,13 +26,19 @@ class CategoryList extends StatelessWidget {
         SizedBox(
           height: categoryHeight,
           child: BlocBuilder<HomeScreenBloc, HomeScreenState>(builder: (context, state) {
+            final int maxVisible = 4;
+            final bool hasMore = state.categories.length > maxVisible;
+
+            final List<String> visibleCategories =
+            hasMore ? state.categories.sublist(0, maxVisible) : state.categories;
+
             return ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: visibleCategories.length + 1,
               itemBuilder: (ctx, index) {
                 if (index < visibleCategories.length) {
                   return CategoryTile(
-                    title: category[index],
+                    title: state.categories[index],
                     onTap: () => showSnackbar(context, visibleCategories[index]),
                   );
                 } else {

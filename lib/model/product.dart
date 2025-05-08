@@ -2,8 +2,11 @@ import 'dart:ffi';
 import 'dart:math';
 
 import 'package:demo/utils/constants.dart';
+import 'package:floor/floor.dart';
 
+@entity
 class Product {
+  @primaryKey
   final String? id;
   final String name;
   final String description;

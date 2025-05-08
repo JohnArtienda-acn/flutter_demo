@@ -19,6 +19,7 @@ class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
       : super(const HomeScreenState(
           products: [],
           addedProducts: [],
+          categories: [],
           homeScreentab: 0,
           isError: false,
           isLoading: false,
@@ -37,14 +38,13 @@ class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
     emit(state.copyWith(isLoading: true));
 
     try {
-      // await Future.delayed(Duration(seconds: 2));
-      // List<Product> products = await _loadProducts();
-
       List<Product> products = await fireStoreHelper.getProducts();
+      List<String> categories = await fireStoreHelper.getCategories();
 
       emit(
         state.copyWith(
           products: products,
+          categories: categories,
           isError: false,
           isLoading: false,
         ),

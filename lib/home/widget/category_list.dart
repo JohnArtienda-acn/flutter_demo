@@ -1,7 +1,11 @@
+import 'package:demo/bloc/homescreenbloc.dart';
 import 'package:demo/utils/constants.dart';
 import 'package:demo/utils/textstyle.dart';
 import 'package:demo/home/widget/category_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../bloc/homescreenstate.dart';
 
 class CategoryList extends StatelessWidget {
   final List<String> category;
@@ -27,23 +31,25 @@ class CategoryList extends StatelessWidget {
         SizedBox(height: mediumPadding),
         SizedBox(
           height: categoryHeight,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: visibleCategories.length + 1,
-            itemBuilder: (ctx, index) {
-              if (index < visibleCategories.length) {
-                return CategoryTile(
-                  title: category[index],
-                  onTap: () => showSnackbar(context, visibleCategories[index]),
-                );
-              } else {
-                return CategoryTile(
-                  title: "See more",
-                  onTap: () => showSnackbar(context, "See more"),
-                );
-              }
-            },
-          ),
+          child: BlocBuilder<HomeScreenBloc, HomeScreenState>(builder: (context, state) {
+            return ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: visibleCategories.length + 1,
+              itemBuilder: (ctx, index) {
+                if (index < visibleCategories.length) {
+                  return CategoryTile(
+                    title: category[index],
+                    onTap: () => showSnackbar(context, visibleCategories[index]),
+                  );
+                } else {
+                  return CategoryTile(
+                    title: "See more",
+                    onTap: () => showSnackbar(context, "See more"),
+                  );
+                }
+              },
+            );
+          }),
         )
       ],
     );

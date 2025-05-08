@@ -14,6 +14,9 @@ Tools used are:
 - Routing : Go_Router
 - Qr_Flutter
 - Dotted_Border
+- Firestore for Online Repository
+- Floor for Local Database
+- get_it for dependency injection
 
 # Note
 For modifying the Profile Tab
